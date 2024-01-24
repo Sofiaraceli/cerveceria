@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cervecería Artesanal</title>
+
+    <!-- Aquí va el CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    <!-- Aquí va tu CSS personalizado -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-bs-theme="dark">
+    <header>
+
+        <!-- Navbar -->
+        <div class="fondo-rojo text-center py-2">
+            <p class="mb-0">Envios gratis a CABA y GBA a partir de $10.000</p>
+        </div>
+        <nav class="navbar navbar-expand-md navbar-dark fondo-negro">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo.png" alt="SirHopper">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+                    aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar">
+                    <ul class="navbar-nav navbar-custom">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="nuestra-historia.html">Nuestra historia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="cervezas.html">Cervezas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="cervecerias-y-franquicias.html">Cervecerias y
+                                franquicias</a>
+                        </li>
+                        <li class="nav-item">
+                            <img src="img/carrito-de-compras.png" alt="Carrito">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <!-- Carrusel principal -->
+        <section>
+            <div id="carrusel-inicio" class="carousel slide carousel-fade" data-bs-ride="carousel"
+                data-bs-pause="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/carousel-1.png" class="d-block w-100 " alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/carousel-2.png" class="d-block w-100 " alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/carousel-3.png" class="d-block w-100 " alt="...">
+                    </div>
+                    <div class="flechas-carrusel d-flex align-items-center">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carrusel-inicio"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carrusel-inicio"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+        </section>
+
+
+        <!-- Servicios -->
+        <section class="text-white">
+            <h2 class="text-center my-10">Servicios</h2>
+            <div class="container-fluid card-container mt-3 text-center">
+                <div class="row card-row">
+                    <div class="col-sm-12 col-md-6 card-column">
+                        <div class="card">
+                            <div class="img-container">
+                                <img src="img/1.png" class="card-img-top img-fluid" alt="...">
+                            </div>
+                            <div class="card-img-overlay ocultar">
+                                <div class="border-container">
+                                    <div class="card-content">
+                                        <h5 class="card-title">Envíos</h5>
+                                        <p class="card-text">Disfrutá las mejores cervezas artesanales del país, sin
+                                            salir de tu casa.
+                                            Mirá nuestros productos y pedí online</p>
+                                        <a href="cervezas.html"><button class="btn boton-amarillo">Mirá nuestras
+                                                cervezas</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 card-column">
+                        <div class="card">
+                            <div class="img-container">
+                                <img src="img/fiesta.jpg" class="card-img-top img-fluid" alt="...">
+                            </div>
+                            <div class="card-img-overlay ocultar">
+                                <div class="border-container">
+                                    <div class="card-content">
+                                        <h5 class="card-title">Fiestas</h5>
+                                        <p class="card-text">Vos encargate de juntar personas, nosotros ponemos la
+                                            birra.Consultá nuestros servicios de cerveza tirada y comida para fiestas
+                                        </p>
+                                        <a href="#"><button class="btn boton-amarillo">Escribinos</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row card-row">
+                    <div class="col-sm-12 col-md-6 card-column">
+                        <div class="card">
+                            <div class="img-container">
+                                <img src="img/3.png" class="card-img-top img-fluid" alt="...">
+                            </div>
+                            <div class="card-img-overlay ocultar">
+                                <div class="border-container">
+                                    <div class="card-content">
+                                        <h5 class="card-title">Cervecerías</h5>
+                                        <p class="card-text">¿Tenés una cervecería y querés servir cerveza que enamore a
+                                            tus
+                                            clientes?</p>
+                                        <a href="cervecerias-y-franquicias.html"><button
+                                                class="btn boton-amarillo">Empezá
+                                                ahora</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 card-column">
+                        <div class="card">
+                            <div class="img-container">
+                                <img src="img/2.png" class="card-img-top img-fluid" alt="...">
+                            </div>
+                            <div class="card-img-overlay ocultar">
+                                <div class="border-container">
+                                    <div class="card-content">
+                                        <h5 class="card-title">Franquicias</h5>
+                                        <p class="card-text">¿Querés tener tu propia sucursal Sir Hopper?</p>
+                                        <a href="cervecerias-y-franquicias.html"><button
+                                                class="btn boton-amarillo">Empezá
+                                                ahora</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Nuestras cervezas -->
+        <section class="bg-yellow p-3">
+            <h2 class="text-center my-10">Nuestras cervezas</h2>
+            <div class="container product-container text-center">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 producto zoom-in">
+                        <img src="img/cervezas/COLD-IPA_LATA-FRENTE-375x375.png" alt="Cold IPA">
+                        <h5 class="bg-yellow">Cold IPA</h5>
+                        <p>¿Es acaso una West Coast IPA? o ¿una Brut? ¿Quizá una New England IPA? o una ¿India Pale Ale?
+                            Una mezcla de estilos que vino para quedarse a esta familia SirHoppera</p>
+                    </div>
+                    <div class="col-sm-6 col-md-3 producto zoom-in">
+                        <img src="img/cervezas/DOBLE-NEIPA_LATA-FRENTE-375x375.png" alt="Doble NEIPA">
+                        <h5 class="bg-yellow">Doble NEIPA</h5>
+                        <p>Una NEIPA doblemente recargada de lúpulos, con extra cuerpo,
+                            mucha untuosidad y mega hazy. Sobresale el perfil frutado de los lúpulos: a frutas
+                            tropicales, frutas de carozo y al final, algo de cítricos y de resina</p>
+                    </div>
+                    <div class="col-sm-6 col-md-3 producto zoom-in">
+                        <img src="img/cervezas/EAST-COAST-LATA-FRENTE-375x375.png" alt="East Coast APA">
+                        <h5 class="bg-yellow">East Coast APA</h5>
+                        <p>Una NE APA súper frutada, esterosa, con levadura inglesa y de
+                            gran cuerpo. El perfil de la Costa Este, con el cuerpo y la tomabilidad de una APA</p>
+                    </div>
+                    <div class="col-sm-6 col-md-3 producto zoom-in">
+                        <img src="img/cervezas/FH-IPA_LATA-FRENTE-GOTAS-2048x2048.png" alt="Fresh Hop IPA">
+                        <h5 class="bg-yellow">Fresh Hop IPA</h5>
+                        <p>Esta Fresh Hop IPA es una celebración de los mejores perfiles del
+                            lúpulo, catados en flor y recién cosechados en El Bolsón</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 producto zoom-in">
+                        <img src="img/cervezas/IMPERIAL-IPA_LATA-FRENTE-GOTAS-375x375.png" alt="Imperial IPA">
+                        <h5 class="bg-yellow">Imperial IPA</h5>
+                        <p>Nuestra versión de una Imperial IPA con 9 grados de alcohol
+                            completamente enmascarados en un planeta de sabores y aromas</p>
+                    </div>
+                    <div class="col-sm-6 col-md-3 producto zoom-in">
+                        <img src="img/cervezas/NE-IPA_LATA-FRENTE-GOTAS-375x375.png" alt="New England IPA">
+                        <h5 class="bg-yellow">New England IPA</h5>
+                        <p>Nueva NE IPA, con una leva que fomenta la biotransformación dando
+                            lugar a diferentes y novedosos perfiles aromáticos, cercanos a frutas de carozo y tropicales
+                        </p>
+                    </div>
+                    <div class="col-sm-6 col-md-3 producto zoom-in">
+                        <img src="img/cervezas/WC-IPA_LATA-FRENTE-GOTAS-375x375.png" alt="West Coast IPA">
+                        <h5 class="bg-yellow">West Coast IPA</h5>
+                        <p>Cítrica, resinosa, rústica, rabiosa, seca y amarga</p>
+                    </div>
+                    <div class="col-sm-6 col-md-3 producto zoom-in">
+                        <img src="img/cervezas/WHITE-IPA_LATA-FRENTE-375x375.webp" alt="White IPA">
+                        <h5 class="bg-yellow">White IPA</h5>
+                        <p>Una American IPA que fusiona la escuela belga y la americana;
+                            seca, amarga, cítrica y resinosa, típica de la costa Oeste, pero con más trigo, especias y
+                            cítricos</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--Testimonios -->
+        <section class="text-white">
+            <h2 class="text-center my-10 text-white">Testimonios</h2>
+            <div class="text-center my-4 puntuacion">
+                <span class="puntuacion-promedio">4.8</span>
+                <span class="puntuacion-estrellas">★★★★★</span>
+                <span class="puntuacion-cantidad">(320 Opiniones)</span>
+            </div>
+            <div id="carrusel-testimonios" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000"
+                data-bs-pause="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container">
+                            <div class="row align-items-start">
+                                <div class="col-md-4 testimonio">
+                                    <img src="img/testimonios/1.png" class="rounded-circle mx-auto" alt="Testimonial 1">
+                                    <p class="testimonio-puntaje">★★★★★</p>
+                                    <p class="testimonio-texto">Nos atendieron SUPER bien!!!!!! Comimos rico y la
+                                        cerveza negra es increíble! Me encanta ! Voy a volver seguro!</p>
+                                </div>
+                                <div class="col-md-4 testimonio">
+                                    <img src="img/testimonios/2.png" class="rounded-circle mx-auto" alt="Testimonial 2">
+                                    <p class="testimonio-puntaje">★★★★</p>
+                                    <p class="testimonio-texto">El lugar es lindo y espacioso. Podes sentarte adentro o
+                                        elegir el patio que está muy bien ambientado.
+                                        La atención es muy buena.</p>
+                                </div>
+                                <div class="col-md-4 testimonio">
+                                    <img src="img/testimonios/3.png" class="rounded-circle mx-auto" alt="Testimonial 3">
+                                    <p class="testimonio-puntaje">★★★★★</p>
+                                    <p class="testimonio-texto">Un lugar precioso, donde tenés diferentes opciones para
+                                        sentarte, la atención de las chicas es excelente y la comida riquísima y te la
+                                        traen rapidísimo!!🥰🥰</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row align-items-start">
+                                <div class="col-md-4 testimonio">
+                                    <img src="img/testimonios/1.png" class="rounded-circle mx-auto" alt="Testimonial 4">
+                                    <p class="testimonio-puntaje">★★★★★</p>
+                                    <p class="testimonio-texto">El lugar está muy bueno, la atención también, la comida
+                                        y bebida es muy rica. Lo recomiendo.</p>
+                                </div>
+                                <div class="col-md-4 testimonio">
+                                    <img src="img/testimonios/2.png" class="rounded-circle mx-auto" alt="Testimonial 5">
+                                    <p class="testimonio-puntaje">★★★★★</p>
+                                    <p class="testimonio-texto">Excelente lugar, muy bien ambientado. Resalto la
+                                        atención de las meseras.</p>
+                                </div>
+                                <div class="col-md-4 testimonio">
+                                    <img src="img/testimonios/3.png" class="rounded-circle mx-auto" alt="Testimonial 6">
+                                    <p class="testimonio-puntaje">★★★★★</p>
+                                    <p class="testimonio-texto">Está muy bueno el lugar, con distintos espacios, algunos
+                                        más concurridos otros reservados, especial para grupos numerosos y para los
+                                        amantes del aire libre un hermoso jardín</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row align-items-start">
+                                <div class="col-md-4 testimonio">
+                                    <img src="img/testimonios/1.png" class="rounded-circle mx-auto" alt="Testimonial 7">
+                                    <p class="testimonio-puntaje">★★★★★</p>
+                                    <p class="testimonio-texto">La comida realmente es muy rica y de excelente calidad -
+                                        se nota fresca. El patio es divino. Muy y mucha buena onda! Los dueños y el
+                                        personal amorosos! Buena música para relajar cerrando el día.</p>
+                                </div>
+                                <div class="col-md-4 testimonio">
+                                    <img src="img/testimonios/2.png" class="rounded-circle mx-auto" alt="Testimonial 8">
+                                    <p class="testimonio-puntaje">★★★★★</p>
+                                    <p class="testimonio-texto">A veces voy solo días de semana y los sábados con
+                                        amigos, muy bueno todo, súper la atención, las pizzas de crudo y rúcula son
+                                        riquísimas y la cerveza muy rica, Romina una genia atendiendo, recomiendo el
+                                        lugar. Firmado SCOTTISH SIN ESPUMA.........</p>
+                                </div>
+                                <div class="col-md-4 testimonio">
+                                    <img src="img/testimonios/3.png" class="rounded-circle mx-auto" alt="Testimonial 9">
+                                    <p class="testimonio-puntaje">★★★★</p>
+                                    <p class="testimonio-texto">Excelente lugar, muy buena ambientación, servicio,
+                                        variedad de comidas y cervezas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        </section>
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="p-4">
+        <h5 class="text-center my-3">Disfrutá nuestras comidas y cervezas en:</h5>
+        <div class="container-fluid my-3">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="sucursales">
+                        <h2>Sucursal 1</h2>
+                        <p class="social-icons">
+                            <i class="fa fa-map-marker me-2"></i>
+                            Humahuaca 3841
+                            <a href="http://web.whatsapp.com" class="social-icons" target="_blank"><img
+                                    src="img/icons/whatsapp.png" alt="WhatsApp"></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="sucursales">
+                        <h2>Sucursal 3</h2>
+                        <p class="social-icons">
+                            <i class="fa fa-map-marker me-2"></i>
+                            Humahuaca 3841
+                            <a href="http://web.whatsapp.com" class="social-icons" target="_blank"><img
+                                    src="img/icons/whatsapp.png" alt="WhatsApp"></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="sucursales">
+                        <h2>Sucursal 2</h2>
+                        <p class="social-icons">
+                            <i class="fa fa-map-marker me-2"></i>
+                            Humahuaca 3841
+                            <a href="http://web.whatsapp.com" class="social-icons" target="_blank"><img
+                                    src="img/icons/whatsapp.png" alt="WhatsApp"></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="sucursales">
+                        <h2>Sucursal 4</h2>
+                        <p class="social-icons">
+                            <i class="fa fa-map-marker me-2"></i>
+                            Humahuaca 3841
+                            <a href="http://web.whatsapp.com" class="social-icons" target="_blank"><img
+                                    src="img/icons/whatsapp.png" alt="WhatsApp"></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h5 class="mb-3 text-center">Seguinos en nuestras redes</h5>
+            <div class="social-icons  justify-content-center">
+                <a href="http://facebook.com"><img src="img/icons/facebook.png" alt="Facebook" /></a>
+                <a href="http://instagram.com"><img src="img/icons/instagram.png" alt="Instagram" /></a>
+                <a href="http://tiktok.com"><img src="img/icons/tiktok.png" alt="Tiktok" /></a>
+            </div>
+        </div>
+        </div>
+        <div class="text-center mt-3">
+            <p>&copy; Sofia Missori, Desarrollo, 1B, 2023. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

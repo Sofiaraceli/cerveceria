@@ -1,0 +1,430 @@
+/*Web */
+
+body, main {
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.yellow{
+    color: #cc9c04;
+}
+
+
+.fondo-rojo {
+    background-color: red;
+    color: black;
+}
+
+.fondo-negro {
+    background-color: black;
+    color: white;
+}
+
+.bg-yellow{
+    background-color: #cc9c04;
+    color: black;
+}
+
+
+.navbar-nav .nav-link {
+    color: #ffffff;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #cc9c04;
+    color: black;
+}
+
+.btn-dark:hover{
+    color: #cc9c04;
+}
+
+.nav-item img{
+    height: 30px;
+    width: auto;
+}
+
+
+/*Carousel*/
+
+.separador {
+    position: relative;
+}
+
+.separador::after {
+    content: "";
+    position: absolute;
+    height: 80%;
+    width: 2px;
+    background: #cc9c04;
+    right: 0;
+    top: 0;
+}
+
+.mt-auto {
+    margin-top: auto;
+}
+
+.mb-auto {
+    margin-bottom: auto;
+}
+
+.boton-amarillo {
+    background-color: #cc9c04;
+    color: #000;
+}
+
+.boton-amarillo:hover {
+    background-color: #cc9c04;
+    color: #fff;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    background-color: rgba(255, 255, 255, 0.9);
+    height: 50px;
+    width: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#carrusel-inicio .carousel-item{
+    max-height: 400px; 
+    object-fit: cover;
+}
+
+/* Pildoras de informacion */
+
+section h2{
+    font-size: 48px;
+}
+
+.my-10{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.card {
+    width: 100%;
+}
+
+.card, .card-img-top {
+    border-radius: 0;
+    border: none;
+}
+
+.card-container, .card-row, .card-column {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.ocultar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.border-container {
+    border: 3px solid #cc9c04;
+    padding: 10px;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-content {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .ocultar {
+        position: relative;
+        height: auto;
+        background: transparent;
+        opacity: 1;
+    }
+}
+
+@media (min-width: 768px) {
+    .img-container img {
+        transition: all 0.3s ease; 
+        filter: grayscale(100%);
+    }
+    
+    .card:hover .card-img-top {
+        filter: grayscale(0%);
+    }
+    
+    .card:hover .ocultar {
+        opacity: 1;
+    }
+}
+
+
+/* Testimonios */
+
+.puntuacion {
+    display: flex;
+    justify-content: center;
+}
+
+.puntuacion-promedio, .puntuacion-estrellas, .puntuacion-cantidad {
+    display: flex;
+    align-items: center;
+    margin: 0 5px;
+}
+
+.puntuacion-promedio {
+    font-size: 2.5rem;
+    color: #cc9c04;
+}
+
+.puntuacion-estrellas {
+    font-size: 2rem;
+    color: #cc9c04;
+}
+
+.puntuacion-cantidad {
+    color: #888;
+}
+
+.testimonio {
+    text-align: center;
+    padding: 2rem;
+}
+
+.testimonio img {
+    width: 100px;
+}
+
+.testimonio-texto {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.testimonio-puntaje {
+    color: #cc9c04;
+}
+
+.carousel-item .testimonio {
+    min-height: 400px;
+    overflow-y: auto;
+}
+
+
+/* Nuestra historia */
+
+.timeline, .timeline-row, .timeline-column{
+    margin: 0;
+    padding: 0;
+}
+
+.timeline:before {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background-color: #ccc;
+    z-index: -1;
+}
+
+@media (max-width: 767.98px) {
+    .timeline:before,
+    .timeline-element::before {
+        display: none;
+    }
+}
+
+.timeline-element {
+    position: relative;
+    align-items: center;
+}
+
+.circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    border: 3px solid #cc9c04;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.timeline-element::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 3px;
+    height: 100%;
+    background: #cc9c04;
+    z-index: 1;
+}
+
+.timeline-element:last-child::before {
+    height: 0;
+}
+
+.img-timeline {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+
+
+/* Productos*/
+
+.contenedor-productos {
+    margin-top: 40px;
+}
+
+.contenedor-productos .row {
+    margin-top: 20px;
+}
+
+.zoom-in {
+    overflow: hidden;
+    transition: transform 0.5s;
+}
+
+.zoom-in:hover {
+    transform: scale(1.05);
+}
+
+.producto {
+    display: flex;
+    flex-direction: column;
+}
+
+.producto .btn {
+    align-self: flex-end;
+    margin-top: auto;
+}
+
+.producto h5 {
+    color: #cc9c04;
+}
+
+.producto .bg-yellow {
+    color:black;
+}
+
+
+
+@media (min-width: 767px) {
+    .producto .descripcion-producto, .producto .detalle-producto {
+        min-height: 200px;
+    }
+}
+
+
+.detalle-producto{
+    margin-top: auto;
+}
+
+.detalle-producto .col {
+    color: #cc9c04;
+}
+
+.agregar-al-carrito {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #ffffff;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.agregar-al-carrito:hover {
+    background-color: #cc9c04;
+}
+
+
+/* formulario */
+
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.fondo-contacto-dark {
+    background-color: #212529;
+    color: white;
+}
+
+.fondo-contacto-dark a {
+    color: #cc9c04;
+}
+
+
+
+/* footer */
+footer {
+    color: black;
+    background-color: #cc9c04;
+}
+
+.sucursal-row img {
+    width: 24px;
+    height: 24px;
+}
+
+.sucursales-col {
+    flex-wrap: wrap;
+}
+
+.sucursales {
+    list-style-type: none;
+    padding-left: 0;
+    flex-wrap: wrap;
+}
+
+.sucursales h2{
+    font-size: 18px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+
+
+

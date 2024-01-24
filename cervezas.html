@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cervecería Artesanal</title>
+
+    <!-- Aquí va el CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    <!-- Aquí va tu CSS personalizado -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-bs-theme="dark">
+    <header>
+
+        <!-- Navbar -->
+        <div class="fondo-rojo text-center py-2">
+            <p class="mb-0">Envios gratis a CABA y GBA a partir de $10.000</p>
+        </div>
+        <nav class="navbar navbar-expand-md navbar-dark fondo-negro">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo.png" alt="SirHopper">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+                    aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar">
+                    <ul class="navbar-nav navbar-custom">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="nuestra-historia.html">Nuestra historia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="cervezas.html">Cervezas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="cervecerias-y-franquicias.html">Cervecerias y
+                                franquicias</a>
+                        </li>
+                        <li class="nav-item">
+                            <img src="img/carrito-de-compras.png" alt="Carrito">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="text-white">
+        <h1 class="text-center my-5">Nuestras cervezas</h1>
+        <div class="container contenedor-productos text-center my-4">
+            <div class="row">
+                <div class="col-sm-6 col-md-3 producto my-5">
+                    <img src="img/cervezas/COLD-IPA_LATA-FRENTE-375x375.png" alt="Cold IPA">
+                    <h5>Cold IPA</h5>
+                    <p class="descripcion-producto">¿Es acaso una West Coast IPA? o ¿una Brut? ¿Quizá una New England
+                        IPA? o una ¿India Pale Ale? Una mezcla de estilos que vino para quedarse a esta familia
+                        SirHoppera</p>
+                    <p class="product-price">$700</p>
+                    <button class="agregar-al-carrito btn-carrito">Agregar al carrito</button>
+                </div>
+                <div class="col-sm-6 col-md-3 producto my-5">
+                    <img src="img/cervezas/DOBLE-NEIPA_LATA-FRENTE-375x375.png" alt="Doble NEIPA">
+                    <h5>Doble NEIPA</h5>
+                    <p class="descripcion-producto">Una NEIPA doblemente recargada de lúpulos, con extra cuerpo, mucha
+                        untuosidad y mega hazy. Sobresale el perfil frutado de los lúpulos: a frutas tropicales, de carozo y algo de cítricos</p>
+                    <p class="product-price">$700</p>
+                    <button class="agregar-al-carrito btn-carrito">Agregar al carrito</button>
+                </div>
+                <div class="col-sm-6 col-md-3 producto my-5">
+                    <img src="img/cervezas/EAST-COAST-LATA-FRENTE-375x375.png" alt="East Coast APA">
+                    <h5>East Coast APA</h5>
+                    <p class="descripcion-producto">Una NE APA súper frutada, esterosa, con levadura inglesa y de gran
+                        cuerpo. El perfil de la Costa Este, con el cuerpo y la tomabilidad de una APA</p>
+                    <p class="product-price">$700</p>
+                    <button class="agregar-al-carrito btn-carrito">Agregar al carrito</button>
+                </div>
+                <div class="col-sm-6 col-md-3 producto my-5">
+                    <img src="img/cervezas/FH-IPA_LATA-FRENTE-GOTAS-2048x2048.png" alt="Fresh Hop IPA">
+                    <h5>Fresh Hop IPA</h5>
+                    <p class="descripcion-producto">Esta Fresh Hop IPA es una celebración de los mejores perfiles del
+                        lúpulo, catados en flor y recién cosechados en El Bolsón</p>
+                    <p class="product-price">$700</p>
+                    <button class="agregar-al-carrito btn-carrito">Agregar al carrito</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-3 producto my-5">
+                    <img src="img/cervezas/IMPERIAL-IPA_LATA-FRENTE-GOTAS-375x375.png" alt="Imperial IPA">
+                    <h5>Imperial IPA</h5>
+                    <p class="descripcion-producto">Nuestra versión de una Imperial IPA con 9 grados de alcohol
+                        completamente enmascarados en un planeta de sabores y aromas</p>
+                    <p class="product-price">$700</p>
+                    <button class="agregar-al-carrito btn-carrito">Agregar al carrito</button>
+                </div>
+                <div class="col-sm-6 col-md-3 producto my-5">
+                    <img src="img/cervezas/NE-IPA_LATA-FRENTE-GOTAS-375x375.png" alt="New England IPA">
+                    <h5>New England IPA</h5>
+                    <p class="descripcion-producto">Nueva NE IPA, con una leva que fomenta la biotransformación dando
+                        lugar a diferentes y novedosos perfiles aromáticos, cercanos a frutas de carozo y tropicales</p>
+                    <p class="product-price">$700</p>
+                    <button class="agregar-al-carrito btn-carrito">Agregar al carrito</button>
+                </div>
+                <div class="col-sm-6 col-md-3 producto my-5">
+                    <img src="img/cervezas/WC-IPA_LATA-FRENTE-GOTAS-375x375.png" alt="West Coast IPA">
+                    <h5>West Coast IPA</h5>
+                    <p class="descripcion-producto">Cítrica, resinosa, rústica, rabiosa, seca y amarga</p>
+                    <p class="product-price">$700</p>
+                    <button class="agregar-al-carrito btn-carrito">Agregar al carrito</button>
+                </div>
+                <div class="col-sm-6 col-md-3 producto my-5">
+                    <img src="img/cervezas/WHITE-IPA_LATA-FRENTE-375x375.webp" alt="White IPA">
+                    <h5>White IPA</h5>
+                    <p class="descripcion-producto">Una American IPA que fusiona la escuela belga y la americana; seca,
+                        amarga, cítrica y resinosa, típica de la costa Oeste, pero con más trigo, especias y cítricos
+                    </p>
+                    <p class="product-price">$700</p>
+                    <button class="agregar-al-carrito btn-carrito">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="p-4">
+        <h5 class="text-center my-3">Disfrutá nuestras comidas y cervezas en:</h5>
+        <div class="container-fluid my-3">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="sucursales">
+                        <h2>Sucursal 1</h2>
+                        <p class="social-icons">
+                            <i class="fa fa-map-marker me-2"></i>
+                            Humahuaca 3841
+                            <a href="http://web.whatsapp.com" class="social-icons" target="_blank"><img
+                                    src="img/icons/whatsapp.png" alt="WhatsApp"></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="sucursales">
+                        <h2>Sucursal 3</h2>
+                        <p class="social-icons">
+                            <i class="fa fa-map-marker me-2"></i>
+                            Humahuaca 3841
+                            <a href="http://web.whatsapp.com" class="social-icons" target="_blank"><img
+                                    src="img/icons/whatsapp.png" alt="WhatsApp"></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="sucursales">
+                        <h2>Sucursal 2</h2>
+                        <p class="social-icons">
+                            <i class="fa fa-map-marker me-2"></i>
+                            Humahuaca 3841
+                            <a href="http://web.whatsapp.com" class="social-icons" target="_blank"><img
+                                    src="img/icons/whatsapp.png" alt="WhatsApp"></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="sucursales">
+                        <h2>Sucursal 4</h2>
+                        <p class="social-icons">
+                            <i class="fa fa-map-marker me-2"></i>
+                            Humahuaca 3841
+                            <a href="http://web.whatsapp.com" class="social-icons" target="_blank"><img
+                                    src="img/icons/whatsapp.png" alt="WhatsApp"></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h5 class="mb-3 text-center">Seguinos en nuestras redes</h5>
+            <div class="social-icons  justify-content-center">
+                <a href="http://facebook.com"><img src="img/icons/facebook.png" alt="Facebook" /></a>
+                <a href="http://instagram.com"><img src="img/icons/instagram.png" alt="Instagram" /></a>
+                <a href="http://tiktok.com"><img src="img/icons/tiktok.png" alt="Tiktok" /></a>
+            </div>
+        </div>
+        </div>
+        <div class="text-center mt-3">
+            <p>&copy; Sofia Missori, Desarrollo, 1B, 2023. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
